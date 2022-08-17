@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -11,7 +12,7 @@ export class LoginComponent implements OnInit {
   form: FormGroup;
   loading = false;
 
-  constructor(private fb: FormBuilder, private _snackBar: MatSnackBar) { //Login con usuario y contraseña
+  constructor(private fb: FormBuilder, private _snackBar: MatSnackBar, private router: Router) { //Login con usuario y contraseña
     this.form = this.fb.group({
       user: ['', Validators.required], //Para que el formulario de inicio de sesion sea valido hay que poner los datos bien
       pass: ['', Validators.required]
@@ -35,7 +36,7 @@ export class LoginComponent implements OnInit {
   }
 
   error(){
-    this._snackBar.open('Incorrect User/Password', '', {
+    this._snackBar.open('Incorrect User/Password','', {
       duration: 5000,
       horizontalPosition:'center',
       verticalPosition: 'bottom'
@@ -45,7 +46,7 @@ export class LoginComponent implements OnInit {
   fakeLoading() {
     this.loading = true;
     setTimeout(() => {
-      this.loading = false;
+      this.router.navigate(['dashboard'])
     }, 1500);
   }
   
