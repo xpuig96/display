@@ -1,0 +1,12 @@
+[
+    {
+        "nombre":"Main",
+        "redirect":"/dashboard"
+    },
+    {
+        "nombre":"Displays",
+        "redirect":"/dashboard/displays"
+    }
+    
+    
+]

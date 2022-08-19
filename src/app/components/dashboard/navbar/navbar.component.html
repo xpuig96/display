@@ -1,0 +1,22 @@
+<mat-toolbar color="grey">
+    <img class="img" src="./assets/img/artboard-vanderlande.png">
+    <span class="example-spacer"></span>
+    <div class="example-button-row">
+        <button *ngFor="let item of menu" class="button" mat-button [routerLink]="item.redirect">{{item.nombre}}</button>
+    </div>
+    
+    <span class="example-spacer"></span>
+    <button routerLink="/logout" mat-icon-button class="example-icon logout-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>logout</mat-icon>
+    </button>
+</mat-toolbar>
+
+<!--
+<mat-tab-group>
+    <mat-tab label="Main"> Content 1 </mat-tab>
+    <mat-tab label="Displays"> Content 2 </mat-tab>
+</mat-tab-group>
+   -->
+
+  
+
