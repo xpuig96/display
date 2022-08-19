@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
+
 //Angular Material
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
@@ -14,7 +15,12 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatIconModule} from '@angular/material/icon';
-
+import {MatTableModule} from '@angular/material/table';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import {MatCardModule} from '@angular/material/card';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 
 
@@ -32,7 +38,14 @@ import {MatIconModule} from '@angular/material/icon';
     MatToolbarModule,
     MatTabsModule,
     MatIconModule,
-    HttpClientModule
+    HttpClientModule,
+    MatTableModule,
+    MatTooltipModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatCardModule,
+    MatGridListModule
+    
   ],
   exports: [
     MatFormFieldModule,
@@ -44,7 +57,13 @@ import {MatIconModule} from '@angular/material/icon';
     MatToolbarModule,
     MatTabsModule,
     MatIconModule,
-    HttpClientModule
+    HttpClientModule,
+    MatTableModule,
+    MatTooltipModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatCardModule,
+    MatGridListModule
   ]
 })
 export class SharedModule { }

@@ -7,6 +7,8 @@ import { DashboardComponent } from './dashboard.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DisplaysComponent } from './displays/displays.component';
+import { AddDisplayComponent } from './displays/add-display/add-display.component';
+
 
 
 
@@ -15,7 +17,8 @@ import { DisplaysComponent } from './displays/displays.component';
     DashboardComponent,
     InicioComponent,
     NavbarComponent,
-    DisplaysComponent
+    DisplaysComponent,
+    AddDisplayComponent,
   ],
   imports: [
     CommonModule,
