@@ -1,0 +1,43 @@
+<div class="container">
+    <mat-toolbar color="primary">
+        <span>Add Display</span>
+    </mat-toolbar>
+
+    <mat-card style="margin-top: 1%">
+        <form [formGroup]="form" (ngSubmit)="addDisplay()">
+            <mat-grid-list cols="4" rowHeight="70px">
+                <mat-grid-tile [colspan]="1" [rowspan]="1">
+                    <mat-form-field class="ancho">
+                        <mat-label>Type</mat-label>
+                        <input matInput autocomplete="off" formControlName="type">
+                      </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="3" [rowspan]="5">
+                    <img src="./assets/img/artboard-vanderlande.png">
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="1">
+                    <mat-form-field class="ancho">
+                        <mat-label>Name</mat-label>
+                        <input matInput autocomplete="off" formControlName="name">
+                      </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="1">
+                    <mat-form-field class="ancho">
+                        <mat-label>IP Address</mat-label>
+                        <input matInput autocomplete="off" formControlName="ip">
+                      </mat-form-field>
+                </mat-grid-tile >
+                <mat-grid-tile [colspan]="1" [rowspan]="1">
+                    <mat-form-field class="ancho">
+                        <mat-label>Port</mat-label>
+                        <input matInput autocomplete="off" formControlName="port">
+                      </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="1">
+                    <button type="submit" [disabled]="form.invalid" mat-raised-button color="primary">ADD</button>
+                </mat-grid-tile>
+            </mat-grid-list>
+        </form>
+    </mat-card>
+
+</div>
