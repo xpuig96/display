@@ -1,19 +1,34 @@
 import { Component, OnInit,} from '@angular/core';
-import { HttpClient } from "@angular/common/http";
+import { Router } from '@angular/router';
+import { InfoMainService } from 'src/app/services/info-main.service';
+
+
+
 
 
 @Component({
-  selector: 'app-inicio',
+  selector: 'inicio',
   templateUrl: './inicio.component.html',
   styleUrls: ['./inicio.component.css'],
 })
 export class InicioComponent implements OnInit {
+
+  public main: any;
+
+
+  constructor(public _infoMainService:InfoMainService, private router:Router) { 
   
-
-  constructor(private http: HttpClient) { }
-
-  ngOnInit() {
+  
     
   }
 
+  ngOnInit(): void {
+    this.main = this._infoMainService.getMain();
+  }
+
+  onEdit(){
+    this.router.navigate(['/dashboard/edit-main'])
+  }
+   
 }
+

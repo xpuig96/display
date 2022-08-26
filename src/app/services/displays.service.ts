@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Display } from '../interfaces/displays';
 
+
 @Injectable({
   providedIn: 'root'
 })

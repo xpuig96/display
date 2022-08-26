@@ -13,6 +13,7 @@ import { DisplaysService } from 'src/app/services/displays.service';
 export class AddDisplayComponent implements OnInit {
 
   form: FormGroup;
+  
 
   constructor(private fb: FormBuilder, 
               private _displayService: DisplaysService,

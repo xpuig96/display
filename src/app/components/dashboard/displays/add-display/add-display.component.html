@@ -7,13 +7,10 @@
         <form [formGroup]="form" (ngSubmit)="addDisplay()">
             <mat-grid-list cols="4" rowHeight="70px">
                 <mat-grid-tile [colspan]="1" [rowspan]="1">
-                    <mat-form-field class="ancho">
+                    <mat-form-field class="ancho" >
                         <mat-label>Type</mat-label>
                         <input matInput autocomplete="off" formControlName="type">
                       </mat-form-field>
-                </mat-grid-tile>
-                <mat-grid-tile [colspan]="3" [rowspan]="5">
-                    <img src="./assets/img/artboard-vanderlande.png">
                 </mat-grid-tile>
                 <mat-grid-tile [colspan]="1" [rowspan]="1">
                     <mat-form-field class="ancho">
@@ -33,7 +30,7 @@
                         <input matInput autocomplete="off" formControlName="port">
                       </mat-form-field>
                 </mat-grid-tile>
-                <mat-grid-tile [colspan]="1" [rowspan]="1">
+                <mat-grid-tile [colspan]="4" [rowspan]="1">
                     <button type="submit" [disabled]="form.invalid" mat-raised-button color="primary">ADD</button>
                 </mat-grid-tile>
             </mat-grid-list>

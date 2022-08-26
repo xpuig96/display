@@ -1,6 +1,44 @@
 <div class="container">
-    <mat-toolbar color="primary">
-        <span>Main</span>
+    <mat-toolbar color="primary" style="margin-bottom: 1%;">
+        <span style="margin-right: 2%;">Main</span>
     </mat-toolbar>
 
-    
+    <div class="mainform">
+        <mat-form-field appearance="fill" style="width: 50%;">
+            <mat-label>PrintOptionsEnabled</mat-label>
+            <input matInput [(ngModel)]="main.PrintOptionsEnabled"> 
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="fill" style="width: 50%;">
+            <mat-label>CloseChuteOptionsEnabled</mat-label>
+            <input matInput [(ngModel)]="main.CloseChuteOptionsEnabled">
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="fill" style="width: 50%;">
+            <mat-label>MilisecondsPrintToMainPage</mat-label>
+            <input matInput [(ngModel)]="main.MilisecondsPrintToMainPage">
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="fill" style="width: 50%;">
+            <mat-label>CreateAlarmOnDisconnect</mat-label>
+            <input matInput [(ngModel)]="main.CreateAlarmOnDisconnect">
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="fill" style="width: 50%;">
+            <mat-label>ReceiveTimeout</mat-label>
+            <input matInput [(ngModel)]="main.ReceiveTimeout">
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="fill" style="width: 50%;">
+            <mat-label>UpdatePageFromHost</mat-label>
+            <input matInput [(ngModel)]="main.UpdatePageFromHost">
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="fill" style="width: 50%;">
+            <mat-label>TextRightPadding</mat-label>
+            <input matInput [(ngModel)]="main.TextRightPadding">
+        </mat-form-field>
+
+        
+    </div>
+</div>
